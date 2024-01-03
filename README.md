@@ -26,4 +26,4 @@ The repository is organized as follows:
 ## Getting Started
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Naman-jain-01/GFG_POTD
+   git clone https://github.com/Naman-jain-01/GFG_POTD 
