@@ -9,8 +9,6 @@ Welcome to the GeeksforGeeks Problem of the Day (POTD) Series repository, where 
 - [Prerequisites](#prerequisites)
 - [Directory Structure](#directory-structure)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 This repository contains my solutions to GeeksforGeeks POTD Series problems, implemented in Java. GeeksforGeeks is a platform that provides a wide variety of programming problems to help you enhance your coding skills.
