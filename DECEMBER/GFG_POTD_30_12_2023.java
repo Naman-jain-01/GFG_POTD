@@ -1,8 +1,6 @@
-package DECEMBER;
 
-import java.util.*;
 
-class Solution8
+class Solution
 {
     public static String[] winner(String arr[], int n) {
         HashMap<String, Integer> map = new HashMap<>();
