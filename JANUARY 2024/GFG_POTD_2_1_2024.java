@@ -1,15 +1,5 @@
-package JANUARY;
 
-public class GFG_POTD_2_1_2024 {
-
-    public static void main(String[] args) {
-        long[] arr1 = {1, 1, 1, 1, 1, 1};
-        long k = 2;
-        long n = arr1.length;
-        System.out.println(Solution1.maxSumWithK(arr1, n, k));
-    }
-}
-   class Solution1 {
+   class Solution {
         public static long maxSumWithK(long a[], long N, long K)
         {
             int n=(int)N;
