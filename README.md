@@ -1,6 +1,6 @@
 # GeeksforGeeks POTD Series - Java Solutions
 
-![GeeksforGeeks Logo](https://www.geeksforgeeks.org/wp-content/uploads/gfg-200x200.png)
+![GeeksforGeeks Logo](https://media.geeksforgeeks.org/gfg-gg-logo.svg)
 
 Welcome to the GeeksforGeeks Problem of the Day (POTD) Series repository, where you can find Java solutions to various Data Structures and Algorithms problems.
 
