@@ -1,6 +1,6 @@
-package DECEMBER;
 
-class Solution6{
+
+class Solution{
     static boolean match(String wild, String pattern)
     {
         int n=wild.length();
