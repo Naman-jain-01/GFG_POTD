@@ -1,7 +1,5 @@
-package DECEMBER;//{ Driver Code Starts
-import java.io.*;
-import java.util.*;
-class Solution3 {
+
+class Solution {
     public static ArrayList<ArrayList<Integer>> convertMatrixToList(int[][] matrix) {
         ArrayList<ArrayList<Integer>> resultList = new ArrayList<>();
 
