@@ -1,14 +1,5 @@
-package JANUARY;
 
-import java.util.HashMap;
-
-public class GFG_POTD_3_1_2024 {
-    public static void main(String[] args) {
-        String s ="12110111";
-        System.out.println(Solution3.smallestSubstring(s));
-    }
-}
-class Solution3 {
+class Solution {
     public static int smallestSubstring(String S) {
         if (!S.contains("0") || !S.contains("1") || !S.contains("2")) return -1;
 
