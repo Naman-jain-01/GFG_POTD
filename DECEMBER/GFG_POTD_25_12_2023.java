@@ -1,7 +1,7 @@
-package DECEMBER;
 
 
-class Solution1
+
+class Solution
 {
     //Function for finding determinant of matrix.
     static int determinantOfMatrix(int matrix[][], int n)
