@@ -1,18 +1,7 @@
-package DECEMBER;
 
-import java.util.HashMap;
 
-public class GFG_POTD_29_12_2023 {
-    public static void main(String[] args) {
-        String str="ysualysualuqgxxysual";
-        int length=str.length();
-        int k=5;
-        int ans=Solution7.kSubstrConcat(length,str,k);
-        System.out.println(ans);
-    }
-}
 
-class Solution7
+class Solution
 {
      static int kSubstrConcat(int n, String s, int k)
     {
