@@ -1,6 +1,5 @@
-package DECEMBER;
 
-class Solution9 {
+class Solution {
     public static boolean isPossible(int N, int[] coins) {
 // code here
         Boolean[][] dp = new Boolean[N][2025];
