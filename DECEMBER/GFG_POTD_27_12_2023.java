@@ -1,8 +1,6 @@
-package DECEMBER;
 
-import java.util.Arrays;
 
-class Solution4 {
+class Solution {
     public static int[] antiDiagonalPattern(int[][] matrix) {
         int n = matrix.length;
         int start = 0;
