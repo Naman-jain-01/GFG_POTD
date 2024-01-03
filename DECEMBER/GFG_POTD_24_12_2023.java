@@ -1,7 +1,3 @@
-package DECEMBER;
-
-
-import java.util.*;
 
 
 class Solution {
