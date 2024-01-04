@@ -1,10 +1,5 @@
-package JANUARY;
 
-import java.util.HashMap;
-
-public class GFG_POTD_4_1_2023 {
-}
-class Solution4 {
+class Solution {
     static int singleElement(int[] arr , int N) {
 
         HashMap<Integer,Integer> map= new HashMap<>();
