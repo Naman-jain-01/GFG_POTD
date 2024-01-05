@@ -1,25 +1,20 @@
-package JANUARY;
-
-public class GFG_POTD_5_1_2024 {
-}
-
-class Solution6 {
+class Solution {
     public int TotalWays(int N) {
-        long ans = fibonacciModulo(N + 2);
-        long finals=((ans * ans) % MODULO);
-        return (int)finals;
+        long temp = fib(N + 2);
+        long ans=((temp * temp) % mod);
+        return (int)ans;
     }
 
-    static final long MODULO = 1000000007;
+    static final long mod = 1000000007;
 
-    static long fibonacciModulo(int n) {
+    static long fib(int n) {
         if (n <= 1) {
             return n;
         }
 
         long a = 0, b = 1, temp;
         for (int i = 2; i <= n; i++) {
-            temp = (a + b) % MODULO;
+            temp = (a + b) % mod;
             a = b;
             b = temp;
         }
