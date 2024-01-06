@@ -1,6 +1,6 @@
-package JANUARY;
 
-class Solution7 {
+
+class Solution {
 
     static long primefactorsum(long n) {
         long sum = 0;
