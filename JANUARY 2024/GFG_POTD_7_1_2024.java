@@ -1,8 +1,5 @@
-package JANUARY;
 
-import java.beans.PropertyEditorSupport;
-import java.util.Arrays;
-class Solution8
+class Solution
 {
    static int splitArray(int[] arr , int N, int K)
    {
