@@ -1,18 +1,6 @@
-package JANUARY;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 
-public class GFG_POTD_9_1_2024 {
-    public static void main(String[] args) {
-        String pat="code";
-        String txt="codewmecode";
-
-        System.out.println(Solution9.search(pat,txt));
-    }
-}
-
-class Solution9
+class Solution
 {
     static ArrayList<Integer> search(String pat, String txt)
     {
