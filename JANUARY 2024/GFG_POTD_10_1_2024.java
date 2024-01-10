@@ -1,7 +1,6 @@
-package JANUARY;
-import java.util.HashMap;
 
-class Solution10{
+
+class Solution{
 int longSubarrWthSumDivByK(int a[], int n, int k)
 {
     int[] prefsum=new int[n+1];
