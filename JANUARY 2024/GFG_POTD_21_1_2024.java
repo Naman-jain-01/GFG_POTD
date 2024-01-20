@@ -1,21 +1,23 @@
-package JANUARY;
+// package JANUARY;
 
-public class GFG_POTD_21_1_2024 {
-    public static void main(String[] args) {
-        int[][] edges=
-                {
-                        {1,2},
-                        {4, 1},
-                        {2, 4},
-                        {3, 4},
-                        {5, 2},
-                        {1, 3}
-                };
+// public class GFG_POTD_21_1_2024 {
+//     public static void main(String[] args) {
+//         int[][] edges=
+//                 {
+//                         {1,2},
+//                         {4, 1},
+//                         {2, 4},
+//                         {3, 4},
+//                         {5, 2},
+//                         {1, 3}
+//                 };
 
-        System.out.println(Solution21.vertexCover(5,6,edges));
-    }
-}
-class Solution21 {
+//         System.out.println(Solution.vertexCover(5,6,edges));
+//     }
+// }
+// TEST CASE
+
+class Solution {
 public static int vertexCover(int n, int m, int[][] edges)
         {
             int[][] graph= new int[n][n];
