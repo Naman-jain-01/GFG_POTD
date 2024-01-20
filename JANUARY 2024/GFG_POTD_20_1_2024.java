@@ -1,15 +1,4 @@
-package JANUARY;
-class Node {
-    int data;
-    Node left;
-    Node right;
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
-    }
-    }
-class Solution20
+class Solution
 {
     static int ans;
     public static int givecoins(Node node)
