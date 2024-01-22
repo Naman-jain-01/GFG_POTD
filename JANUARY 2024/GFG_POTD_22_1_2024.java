@@ -1,6 +1,5 @@
-package JANUARY;
-import java.util.*;
-class Solution22
+
+class Solution
 {
     public static void recursion(Node node , int sum , int curr_sum , ArrayList<Integer> path ,  ArrayList<ArrayList<Integer>> ans)
     {
