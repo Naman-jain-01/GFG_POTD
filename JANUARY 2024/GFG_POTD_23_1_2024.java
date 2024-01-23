@@ -1,10 +1,5 @@
-package JANUARY;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-
-class Solution23 {
+class Solution{
 
     public static int[] findOrder(int n, int m, ArrayList<ArrayList<Integer>> prerequisites) {
         int[] result = new int[n];
