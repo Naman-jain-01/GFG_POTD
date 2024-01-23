@@ -1,55 +1,47 @@
-
-class Solution{
-
-    public static int[] findOrder(int n, int m, ArrayList<ArrayList<Integer>> prerequisites) {
-        int[] result = new int[n];
-        int[] inDegree = new int[n];
-        ArrayList<ArrayList<Integer>> graph = new ArrayList<>(n);
-
-        for (int i = 0; i < n; i++) {
+class Solution
+{
+    static int[] findOrder(int n, int m, ArrayList<ArrayList<Integer>> prerequisites) 
+    {
+        int[] indegree = new int[n];
+        int[] ans = new int[n];
+        
+         ArrayList<ArrayList<Integer>> graph=new ArrayList<>();
+         
+        for(int i=0;i<n;i++)
+        {
             graph.add(new ArrayList<>());
         }
-
-        // Build the graph and calculate in-degrees
-        for (ArrayList<Integer> edgedetails : prerequisites) {
-            int course = edgedetails.get(0);
-            int prerequisiteCourse = edgedetails.get(1);
-            graph.get(prerequisiteCourse).add(course);
-            inDegree[course]++;
+        
+        //Build graph and indegree array
+        for(ArrayList<Integer> edge : prerequisites )
+        {
+            int course=edge.get(0);
+            int precourse=edge.get(1);
+            graph.get(precourse).add(course);
+            indegree[course]++;
         }
-        for (int i=0;i<graph.size();i++) {
-            System.out.println(" i " + graph.get(i));
-
+        
+        Queue<Integer> q= new LinkedList<>();
+        for(int i=0;i<n;i++)
+        {
+            if(indegree[i]==0) q.offer(i);
         }
-        // Use a queue to perform topological sorting
-        Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < n; i++) {
-            if (inDegree[i] == 0) {
-                queue.offer(i);
+        
+        int i=0;
+        while(!q.isEmpty())
+        {
+            int curr=q.poll();
+            ans[i++]=curr;
+            
+            for(int num: graph.get(curr))
+            {
+                indegree[num]--;
+                if(indegree[num]==0) q.offer(num);
             }
         }
-
-        int index = 0;
-
-        // Perform topological sorting
-        while (!queue.isEmpty()) {
-            int currentCourse = queue.poll();
-            result[index++] = currentCourse;
-
-            for (int nextCourse : graph.get(currentCourse)) {
-                inDegree[nextCourse]--;
-                if (inDegree[nextCourse] == 0) {
-                    queue.offer(nextCourse);
-                }
-            }
-        }
-
-        // Check if all courses can be taken
-        if (index == n) {
-            return result;
-        } else {
-            return new int[0]; // Return an empty array if there is a cycle
-        }
+        
+        if(i==n) return ans;
+        else return new int[0];
+        
     }
 }
-
