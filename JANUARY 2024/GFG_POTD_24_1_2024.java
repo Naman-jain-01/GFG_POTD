@@ -1,6 +1,5 @@
-package JANUARY;
-import java.util.*;
-class Solution24 {
+
+class Solution{
 
     public boolean isConnected(int n,boolean[] visited,ArrayList<ArrayList<Integer>> adj)
     {
