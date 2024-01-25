@@ -1,5 +1,16 @@
+package JANUARY;
+import java.util.*;
 
-class Solution {
+public class GFG_POTD_25_1_2024
+{
+    public static void main(String[] args) {
+        int n=1033;
+        int m=1055;
+        System.out.println(Solution25.solve(n,m));
+    }
+}
+
+class Solution25 {
     static boolean make_sieve = true;
     static int n=9999;
     static boolean[] prime = new boolean[n+1];
