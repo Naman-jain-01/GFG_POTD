@@ -1,6 +1,4 @@
-package JANUARY;
 
-import java.util.*;
 class Item {
     int value, weight;
     Item(int x, int y){
