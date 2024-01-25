@@ -54,6 +54,7 @@ class Solution26 {
             else {
                 int remain=W-currwt;
                 profit+=ratiolist.get(i).getRatio()*((double) remain);
+break;
             }
         }
         return profit;
